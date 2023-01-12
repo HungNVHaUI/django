@@ -1,0 +1,9 @@
+django-admin startproject mysite
+python manage.py runserver
+python manage.py migrate  //tạo tên bảng trước
+python manage.py makemigrations "name app"
+python manage.py createsuperuser
+môi trường ảo chạy file Scripts\activate.bat
+lấy các thư việ trong môi trường ảo:pip freeze > requirements.txt
+cài đặt:pip install -r requirements.txt
+thoát venv deactivate

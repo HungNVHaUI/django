@@ -1,0 +1,33 @@
+{% extends 'home/base.html'%}
+{% block content%}
+{% load static %}
+    <title>Contact</title>
+    <link rel="stylesheet" href="{%static 'contact/css/comment_contact.css' %}"/>
+    <div class="send-message">
+        <h2>Message</h2>
+        <form action="{% url 'contact:contact'%}" method = "post">
+            {%csrf_token%}
+            <div class="user-box">
+                {{contact_F.username}}
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                {{contact_F.email}}
+                <label>Password</label>
+            </div>
+            <div class="user-box">
+                {{contact_F.body}}
+                <label>Body</label>
+            </div>
+            <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type="Submit" value="Send" id="send_message" >
+            </a>
+        </form>
+    </div>
+{% endblock %}
+
+

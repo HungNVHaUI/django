@@ -1,0 +1,88 @@
+body {
+    font-family: Arial;
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_topnav li {
+    padding: 0;
+    text-transform: none;
+    cursor: none;
+    display: flex;
+
+    margin: 0;
+}
+
+.menu_topnav ul {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+
+}
+
+.menu_topnav a {
+    padding: 10px;
+    margin-top: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu_topnav a:hover {
+    margin-top: 10px;
+    font-size: 24px;
+   font-weight: bold;
+    color: #fc0c0c;
+}
+.menu_topnav {
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    background-color: black;
+
+}
+
+/*------------------*/
+
+form.nav_search {
+    box-sizing: border-box;
+    margin-top: 10px;
+    max-width: 300px;
+    display: flex;
+    position: absolute;
+    right: 5px;
+}
+
+/* Style the search field */
+form.nav_search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.nav_search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.nav_search button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.nav_search::after {
+    content: "";
+    clear: both;
+    display: table;
+}

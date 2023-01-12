@@ -1,0 +1,6 @@
+{% extends 'home/base.html'%}
+	{% block content%}
+		<p>{{post_Detail.title}}</p>
+		<p>{{post_Detail.body}}</p>
+		<p><img src="{{ post_Detail.image.url}} " width="30%"></p>
+	{% endblock %}

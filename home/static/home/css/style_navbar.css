@@ -1,0 +1,45 @@
+.nav_bar li {
+    padding: 0;
+    text-transform: none;
+    cursor: none;
+    display: flex;
+
+    margin: 0;
+}
+
+.nav_bar ul {
+    display: flex;
+    margin: 0;
+
+}
+
+.nav_bar a {
+    padding-right: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.nav_bar a:hover {
+    margin-top: 9px;
+    font-size: 20px;
+   font-weight: bold;
+    color: #fc0c0c;
+}
+.nav_bar {
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    background-color: black;
+    opacity: 75%;
+
+}
+
+
+
+/*///////////////////////////*/
+
+.content_tab{
+    margin-left: auto;
+}
+

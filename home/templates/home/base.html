@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{%static 'home/css/style_topnav.css'%}">
+    <link rel="stylesheet" href="{%static 'home/css/style_navbar.css'%}">
+    <link rel="stylesheet" href="{%static 'home/css/menu_tab.css'%}">
+
+</head>
+<body>
+
+<div class="menu_topnav">
+    <ul>
+        <li><a href="{% url 'home:home'%}">Home</a></li>
+
+        <form class="nav_search" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </ul>
+
+</div>
+
+
+<div class="nav_bar">
+    <ul>
+        <li><a href="{% url 'blog:blog'%}">Blog</a></li>
+        <li><a href="{% url 'contact:contact'%}">Contact</a></li>
+        <li><a href="{% url 'usermember:login'%}">Member</a></li>
+    </ul>
+
+
+    <!--/////////////////////-->
+
+    <aside id="sidebar">
+        <div class="sidebar_content sidebar_head">
+            <h1>Sidebar</h1>
+        </div>
+
+        <div class="sidebar_content sidebar_body">
+            <nav class="side_navlinks">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar_content sidebar_foot">
+
+        </div>
+    </aside>
+
+
+    <div class="sidebar_toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <script src="{%static 'home/js/menu_tab.js'%}"></script>
+    <!--////////////////////-->
+</div>
+<div class="content_tab" id="content_tab">
+    {% block content%}
+
+
+    {% endblock %}
+</div>
+
+</body>
+</html>
